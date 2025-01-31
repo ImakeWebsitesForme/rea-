@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaden Tok</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Jaden Tok</div>
+    </header>
+
+    <main id="videoFeed">
+        <!-- Pre-made videos will be inserted here dynamically -->
+    </main>
+
+    <div class="controls">
+        <button class="like" onclick="likeVideo()">❤️</button>
+        <button class="comment" onclick="addComment()">💬</button>
+        <button class="share" onclick="shareVideo()">🔗</button>
+    </div>
+
+    <!-- Modal for adding a comment -->
+    <div class="comment-modal" id="commentModal">
+        <textarea id="commentText" placeholder="Add your comment..."></textarea>
+        <button onclick="submitComment()">Submit</button>
+        <button onclick="closeCommentModal()">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
